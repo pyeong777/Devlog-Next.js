@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header>
+    <header className="flex items-center justify-between px-12 py-4">
       <Link href="/">
-        <h1>Pyeong devlog</h1>
+        <h1 className="text-xl">Pyeong devlog</h1>
       </Link>
-      <nav>
+      <nav className="flex gap-4">
         <Link href="/">HOME</Link>
         <Link href="/blog">BLOG</Link>
         <Link href="/project">PROJECT</Link>
