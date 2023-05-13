@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Introduction() {
   return (
-    <section className="flex items-center justify-between">
+    <section className="flex items-center justify-between my-6">
       <div className="py-12 basis-4/12">
         <h2>
           프론트엔드 개발자의 기술 블로그 경험한 것들을 기록으로 남기고
