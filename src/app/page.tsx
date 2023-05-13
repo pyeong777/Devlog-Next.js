@@ -1,3 +1,4 @@
+import CarouselPosts from "@/components/CarouselPosts";
 import FeaturedPosts from "@/components/FeaturedPosts";
 import Introduction from "@/components/Introduction";
 
@@ -7,6 +8,8 @@ export default function HomePage() {
       <Introduction />
       {/* @ts-expect-error Server Component */}
       <FeaturedPosts />
+      {/* @ts-expect-error Server Component */}
+      <CarouselPosts />
     </article>
   );
 }
