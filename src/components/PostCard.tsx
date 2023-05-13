@@ -9,15 +9,17 @@ export default function PostCard({
   return (
     <Link href={`/posts/${path}`}>
       <div className="overflow-hidden rounded-md">
-        <Image
-          className="w-full"
-          src={`/images/posts/${path}.png`}
-          alt={title}
-          width={300}
-          height={200}
-        />
+        <div className="lg:overflow-hidden">
+          <Image
+            className="w-full transition-transform duration-500 ease-in-out lg:hover:scale-110"
+            src={`/images/posts/${path}.png`}
+            alt={title}
+            width={300}
+            height={200}
+          />
+        </div>
         <div className="flex flex-col items-center gap-4 p-4">
-          <time className="self-end">{date.toString()}</time>
+          <time className="self-end text-gray-700">{date.toString()}</time>
           <h3 className="font-bold">{title}</h3>
           <p className="w-full text-center truncate">{description}</p>
           <span className="px-2 my-2 text-sm bg-green-100 rounded-lg">
