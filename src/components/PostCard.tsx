@@ -22,7 +22,7 @@ export default function PostCard({
           <time className="self-end text-gray-700">{date.toString()}</time>
           <h3 className="font-bold">{title}</h3>
           <p className="w-full text-center truncate">{description}</p>
-          <span className="px-2 my-2 text-sm text-gray-500 rounded-lg bg-orange-50">
+          <span className="px-2 my-2 text-sm rounded-lg bg-slate-100 text-my-color">
             {category}
           </span>
         </div>
