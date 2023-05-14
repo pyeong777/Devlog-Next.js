@@ -8,9 +8,8 @@ body {
   overflow-y: auto;
   background-color: #ececec;
   margin: 0 auto;
-  -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
