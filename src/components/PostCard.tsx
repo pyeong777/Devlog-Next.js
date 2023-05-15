@@ -7,7 +7,7 @@ export default function PostCard({
   post: { title, description, date, category, path },
 }: Props) {
   return (
-    <Link href={`/posts/${path}`}>
+    <Link href={`/blog/${path}`}>
       <div className="overflow-hidden rounded-md">
         <div className="lg:overflow-hidden">
           <Image
