@@ -5,8 +5,8 @@ export default function Introduction() {
     <section className="flex items-center justify-between my-6">
       <div className="py-12 basis-4/12">
         <h2>
-          프론트엔드 개발자의 기술 블로그 경험한 것들을 기록으로 남기고
-          있습니다.
+          <p>프론트엔드 개발자의 기술 블로그</p>
+          <p>경험한 것들을 기록으로 남기고 있습니다.</p>
         </h2>
         <h3 className="mt-3 text-sm text-gray-400">
           {"A front-end developer's technical blog to record experiences."}

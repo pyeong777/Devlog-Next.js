@@ -11,7 +11,7 @@ export default function PostCard({
       <div className="overflow-hidden rounded-md">
         <div className="lg:overflow-hidden">
           <Image
-            className="w-full transition-transform duration-500 ease-in-out lg:hover:scale-110"
+            className="object-cover w-full transition-transform duration-500 ease-in-out lg:hover:scale-110"
             src={`/images/posts/${path}.png`}
             alt={title}
             width={300}
