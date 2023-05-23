@@ -99,10 +99,7 @@ export default function aboutPage() {
             >
               <AiFillGithub className="w-8 h-8" />
             </a>
-            <a
-              href="https://github.com/pyeong777/Devlog-Next.js"
-              target="_blank"
-            >
+            <a href="https://pyeongdevlog.vercel.app/" target="_blank">
               <AiOutlinePaperClip className="w-8 h-8" />
             </a>
           </div>
@@ -130,7 +127,7 @@ export default function aboutPage() {
             <a href="https://github.com/pyeong777/Rocket" target="_blank">
               <AiFillGithub className="w-8 h-8" />
             </a>
-            <a href="https://taupe-eclair-710931.netlify.app/" target="_blank">
+            <a href="https://rocketmall.netlify.app/" target="_blank">
               <AiOutlinePaperClip className="w-8 h-8" />
             </a>
           </div>
