@@ -142,6 +142,7 @@ export default function aboutPage() {
             <li>Vanilla Javascript를 사용하여 진행한 거래 & SNS 팀 프로젝트</li>
             <li>제공된 API를 활용한 데이터 호출</li>
             <li>프론트엔드 팀 리더 역할</li>
+            <li>테스트 계정은 깃허브 저장소에서 확인해주세요</li>
           </ul>
           <ul className="flex flex-wrap gap-4 text-sm">
             {vanilla.map((lang, index) => (
