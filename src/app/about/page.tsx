@@ -20,7 +20,7 @@ export default function aboutPage() {
   ];
   const vanilla = ["Javascript", "HTML5", "CSS3"];
   return (
-    <article className="p-10 my-8 bg-slate-50">
+    <article className="w-full max-w-5xl p-10 mx-auto my-8 bg-slate-50">
       <section className="flex flex-col mb-10 lg:flex-row">
         <div className="m-auto lg:m-0">
           <Image
@@ -76,7 +76,7 @@ export default function aboutPage() {
         <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
           <h3 className="text-xl font-bold ">Devlog</h3>
           <p className="mb-2 text-sm text-gray-400 ">2023-05-12 ~ 2023-05-24</p>
-          <ul className="pl-4 list-disc">
+          <ul className="pl-4 text-sm list-disc">
             <li>Next.js로 만든 개발블로그</li>
             <li>카테고리 필터 기능 구현</li>
             <li>SEO 최적화</li>
@@ -110,7 +110,7 @@ export default function aboutPage() {
         <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
           <h3 className="text-xl font-bold ">Rocket</h3>
           <p className="mb-2 text-sm text-gray-400 ">2023-04-12~ 2023-05-02</p>
-          <ul className="pl-4 list-disc">
+          <ul className="pl-4 text-sm list-disc">
             <li>React를 사용하여 진행한 쇼핑몰 개인 프로젝트</li>
             <li>React-Query를 사용하여 서버 상태관리</li>
             <li>Firebase API를 사용하여 데이터베이스 관리</li>
@@ -138,7 +138,7 @@ export default function aboutPage() {
         <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
           <h3 className="text-xl font-bold ">감귤마켓</h3>
           <p className="mb-2 text-sm text-gray-400 ">2022-01-03 ~ 2022-01-17</p>
-          <ul className="pl-4 list-disc">
+          <ul className="pl-4 text-sm list-disc">
             <li>Vanilla Javascript를 사용하여 진행한 거래 & SNS 팀 프로젝트</li>
             <li>제공된 API를 활용한 데이터 호출</li>
             <li>프론트엔드 팀 리더 역할</li>
@@ -168,7 +168,7 @@ export default function aboutPage() {
         <div className="flex flex-col gap-4 py-4">
           <h3 className="text-xl font-bold ">주간플래너</h3>
           <p className="mb-2 text-sm text-gray-400 ">2021-12-07 ~ 2021-12-16</p>
-          <ul className="pl-4 list-disc">
+          <ul className="pl-4 text-sm list-disc">
             <li>자바스크립트 연습을 위한 개인 프로젝트</li>
             <li>자바스크립트를 이용한 돔 조작과 이벤트 처리</li>
           </ul>
