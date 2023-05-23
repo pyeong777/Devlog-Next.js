@@ -1,5 +1,11 @@
 import Image from "next/image";
 import { AiFillGithub, AiOutlinePaperClip } from "react-icons/ai";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About me",
+  description: "커리어 소개",
+};
 
 export default function aboutPage() {
   const devlog = ["React", "Next.js", "TailwindCSS", "HTML5", "CSS3"];
