@@ -1,74 +1,114 @@
 [
   {
-    "title": "2021년 리뷰",
-    "description": "2021년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2021-12-31",
-    "category": "my story",
-    "path": "review-2021",
-    "featured": false
-  },
-  {
-    "title": "자바스크립트 기초 문법",
-    "description": "기본 문법부터 사용하는 실전까지 최종정리",
-    "date": "2022-05-08",
+    "title": "자바스크립트 변수와 상수",
+    "description": "자바스크립트 TIL",
+    "date": "2021-10-19",
     "category": "javascript",
-    "path": "javascript-basic",
+    "path": "javascript-1",
     "featured": false
   },
   {
-    "title": "자바스크립트 10가지 프로팁!",
-    "description": "프로처럼 자바스크립트 사용할 수 있는 10가지 팁",
-    "date": "2022-06-15",
+    "title": "자바스크립트 연산자",
+    "description": "자바스크립트 TIL",
+    "date": "2021-10-19",
     "category": "javascript",
-    "path": "javascript-10-tips",
-    "featured": true
-  },
-  {
-    "title": "Node 기초 정리",
-    "description": "기본 적인 Node 사용법에 대해 전부 정리!",
-    "date": "2022-08-21",
-    "category": "backend",
-    "path": "node-basic",
+    "path": "javascript-2",
     "featured": false
   },
   {
-    "title": "2022년 리뷰",
-    "description": "2022년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2022-12-31",
-    "category": "my story",
-    "path": "review-2022",
+    "title": "자바스크립트 조건문",
+    "description": "자바스크립트 TIL",
+    "date": "2021-10-20",
+    "category": "javascript",
+    "path": "javascript-3",
     "featured": false
   },
   {
-    "title": "Node 프로 팁!",
-    "description": "노드를 프로처럼 사용하기 위한 모든 팁들을 정리!",
-    "date": "2023-04-10",
-    "category": "backend",
-    "path": "node-pro-tips",
+    "title": "자바스크립트 함수 & 객체",
+    "description": "자바스크립트 TIL",
+    "date": "2021-10-21",
+    "category": "javascript",
+    "path": "javascript-4",
+    "featured": false
+  },
+  {
+    "title": "자바스크립트 for in & for of",
+    "description": "자바스크립트 TIL",
+    "date": "2021-10-21",
+    "category": "javascript",
+    "path": "javascript-5",
+    "featured": false
+  },
+  {
+    "title": "자바스크립트 생성자 & 프로토타입",
+    "description": "자바스크립트 TIL",
+    "date": "2021-10-22",
+    "category": "javascript",
+    "path": "javascript-6",
+    "featured": false
+  },
+  {
+    "title": "Prototype Link와 Prototype Object",
+    "description": "자바스크립트 TIL",
+    "date": "2021-10-22",
+    "category": "javascript",
+    "path": "javascript-7",
+    "featured": false
+  },
+  {
+    "title": "자바스크립트 Class",
+    "description": "자바스크립트 TIL",
+    "date": "2021-10-22",
+    "category": "javascript",
+    "path": "javascript-8",
+    "featured": false
+  },
+  {
+    "title": "자바스크립트 상속",
+    "description": "자바스크립트 TIL",
+    "date": "2021-10-23",
+    "category": "javascript",
+    "path": "javascript-9",
+    "featured": false
+  },
+  {
+    "title": "자바스크립트 call & bind",
+    "description": "자바스크립트 TIL",
+    "date": "2021-10-23",
+    "category": "javascript",
+    "path": "javascript-10",
+    "featured": false
+  },
+  {
+    "title": "yarn berry(yarn3) type declarations 에러",
+    "description": "yarn berry 에러",
+    "date": "2023-05-07",
+    "category": "yarn",
+    "path": "yarnberry",
     "featured": true
   },
   {
-    "title": "리액트 Best Practice!",
-    "description": "리액트를 정확하게 사용하는 방법들을 정리",
-    "date": "2023-04-15",
-    "category": "frontend",
-    "path": "best-react-practices",
+    "title": "검색엔진 노출 SEO",
+    "description": "SEO 최적화",
+    "date": "2021-11-30",
+    "category": "seo",
+    "path": "seo",
     "featured": true
   },
   {
-    "title": "리액트 18버전!",
-    "description": "리액트 18에 추가된 사항들 정리",
-    "date": "2023-05-02",
-    "category": "frontend",
-    "path": "react18-walkthrough",
+    "title": "perspective",
+    "description": "css animation",
+    "date": "2021-11-10",
+    "category": "css",
+    "path": "css-1",
     "featured": true
   },
   {
-    "title": "2023년 리뷰",
-    "description": "2023년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2023-12-31",
-    "category": "my story",
-    "path": "review-2023",
+    "title": "display flex",
+    "description": "flex 파헤치기",
+    "date": "2021-11-11",
+    "category": "css",
+    "path": "flex",
     "featured": true
   }
 ]

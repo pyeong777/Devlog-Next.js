@@ -15,6 +15,11 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        hostname: "images.velog.io",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };
