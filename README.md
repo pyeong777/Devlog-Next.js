@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pyeong devlog
 
-## Getting Started
+### Next.js로 만든 개발블로그 입니다.
 
-First, run the development server:
+## 사용한 기술스택
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<div style="display:flex">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-squre&logo=JavaScript&logoColor=black">
+<img src="https://img.shields.io/badge/react-61DAFB?style=flat-squre&logo=React&logoColor=black">
+<img src="https://img.shields.io/badge/nextjs-fff?style=flat-squre&logo=Next.js&logoColor=black">
+<img src="https://img.shields.io/badge/TailwindCSS-blue?style=flat-squre&logo=TailwindCSS">
+<img src="https://img.shields.io/badge/html-E34F26?style=flat-squre&logo=HTML5&logoColor=black">
+<img src="https://img.shields.io/badge/css-1572B6?style=flat-squre&logo=CSS3&logoColor=black">
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-squre&logo=Github&logoColor=white">
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 주요 기능
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- post 카테고리 분류 기능
+- 추천 post 캐러셀 슬라이드 기능
+- Next.js 13버전 클라이언트 & 서버 컴포넌트 기능 활용
+- SEO 최적화
 
-## Learn More
+## 서비스 화면
 
-To learn more about Next.js, take a look at the following resources:
+![devlog-1](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/7e27ac92-cfce-42c5-9052-4402a7af3b31)
+![devlog-2](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/464e5013-832f-41b3-986d-8a6cef517c55)
+![devlog-4](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/aae21c69-9e46-4862-a7fc-343100b4d021)
+![devlog-6](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/c077b29f-e3c2-4226-99e6-489d3a118e3e)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 서비스 페이지
+<a href="https://pyeongdevlog.vercel.app/" target="_blank">Pyeong devlog</a>
