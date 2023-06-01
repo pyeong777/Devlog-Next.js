@@ -2390,7 +2390,6 @@ __metadata:
     react-dom: 18.2.0
     react-icons: ^4.8.0
     react-markdown: ^8.0.7
-    react-multi-carousel: ^2.8.3
     react-syntax-highlighter: ^15.5.0
     remark-gfm: ^3.0.1
     tailwind-scrollbar-hide: ^1.1.7
@@ -6212,13 +6211,6 @@ __metadata:
     "@types/react": ">=16"
     react: ">=16"
   checksum: 0f3e570975134a3382c3fe5189e04e742ae154941463bdfaab2293319da1f1585cb9b75b6f07d99f514c4d728d69cc1af3c96ab37df90003b3bcc210dd0001ba
-  languageName: node
-  linkType: hard
-
-"react-multi-carousel@npm:^2.8.3":
-  version: 2.8.3
-  resolution: "react-multi-carousel@npm:2.8.3"
-  checksum: f011d2bee97e0937f34de02612a26a170aaac7b7d1399d7a49d5f0b43d018260470ebe4ba970009f42f7c877eac4e4e2bee6d5dd1bb661d0c0f088c3fba6c2e4
   languageName: node
   linkType: hard
 
