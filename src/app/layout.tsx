@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="{sans.className}">
-      <body className="flex flex-col w-full mx-auto max-w-screen-2xl">
+      <body className="box-border flex flex-col w-full max-w-4xl mx-auto scrollbar-hide">
         <Header />
         <main className="px-12 grow">{children}</main>
         <Footer />
