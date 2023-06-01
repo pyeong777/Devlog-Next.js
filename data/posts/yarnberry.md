@@ -12,8 +12,6 @@
 **타입스크립트 버전을 4.4.4로 변경하면 된다.
 **
 
-참고 - https://github.com/yarnpkg/berry/issues/3722
-
 > yarn remove typescript
 > rm -rf .yarn/sdks/typescript
 > yarn add -D typescript@4.4.4

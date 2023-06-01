@@ -34,8 +34,6 @@ _**(다른 방법들도 있지만 위 2가지가 가장 괜찮고 무난한 방�
 정렬 연습 열심히 해야겠다..🤦‍♂️
 ![](https://images.velog.io/images/sdp1123/post/abf8ecb2-6074-4503-a26f-ee36cb9cec02/naverUI.png)
 
-> **코드 **https://github.com/pyeong777/frontend_html/blob/main/11%EC%9B%94%205%EC%9D%BC/neverUI.html
-
 ---
 
 ### display: flex 와 display: inline-flex의 차이점?
@@ -78,4 +76,4 @@ _**(다른 방법들도 있지만 위 2가지가 가장 괜찮고 무난한 방�
 
 ![](https://images.velog.io/images/sdp1123/post/702b3782-09ff-4cfc-82e8-85e30d968cb0/KakaoTalk_20211105_200855352.png)
 
-> **그림출처 **: https://studiomeal.com/archives/197
+> **그림출처 **: 스튜디오밀
