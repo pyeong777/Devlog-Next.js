@@ -1,7 +1,7 @@
 [
   {
     "title": "자바스크립트 변수와 상수",
-    "description": "자바스크립트 TIL",
+    "description": "let, var, const에 대하여 알아보자 - TIL",
     "date": "2021-10-19",
     "category": "javascript",
     "path": "javascript-1",
@@ -9,7 +9,7 @@
   },
   {
     "title": "자바스크립트 연산자",
-    "description": "자바스크립트 TIL",
+    "description": "산술, 논리, 비교연산자에 대하여 알아보자 - TIL",
     "date": "2021-10-19",
     "category": "javascript",
     "path": "javascript-2",
@@ -17,7 +17,7 @@
   },
   {
     "title": "자바스크립트 조건문",
-    "description": "자바스크립트 TIL",
+    "description": "조건문 공부하기 - TIL",
     "date": "2021-10-20",
     "category": "javascript",
     "path": "javascript-3",
@@ -25,7 +25,7 @@
   },
   {
     "title": "자바스크립트 함수 & 객체",
-    "description": "자바스크립트 TIL",
+    "description": "자바스크립트 함수와 객체에 관하여 - TIL",
     "date": "2021-10-21",
     "category": "javascript",
     "path": "javascript-4",
@@ -33,7 +33,7 @@
   },
   {
     "title": "자바스크립트 for in & for of",
-    "description": "자바스크립트 TIL",
+    "description": "for in / for of 뭐가 다를까? - TIL",
     "date": "2021-10-21",
     "category": "javascript",
     "path": "javascript-5",
@@ -41,7 +41,7 @@
   },
   {
     "title": "자바스크립트 생성자 & 프로토타입",
-    "description": "자바스크립트 TIL",
+    "description": "생성자와 프로토타입 - TIL",
     "date": "2021-10-22",
     "category": "javascript",
     "path": "javascript-6",
@@ -49,7 +49,7 @@
   },
   {
     "title": "Prototype Link와 Prototype Object",
-    "description": "자바스크립트 TIL",
+    "description": "prototype 파헤치기 - TIL",
     "date": "2021-10-22",
     "category": "javascript",
     "path": "javascript-7",
@@ -57,7 +57,7 @@
   },
   {
     "title": "자바스크립트 Class",
-    "description": "자바스크립트 TIL",
+    "description": "객체지향 프로그래밍 with Class - TIL",
     "date": "2021-10-22",
     "category": "javascript",
     "path": "javascript-8",
@@ -65,7 +65,7 @@
   },
   {
     "title": "자바스크립트 상속",
-    "description": "자바스크립트 TIL",
+    "description": "재사용하기 with 상속 - TIL",
     "date": "2021-10-23",
     "category": "javascript",
     "path": "javascript-9",
@@ -73,7 +73,7 @@
   },
   {
     "title": "자바스크립트 call & bind",
-    "description": "자바스크립트 TIL",
+    "description": "call, bind 메소드 - TIL",
     "date": "2021-10-23",
     "category": "javascript",
     "path": "javascript-10",
@@ -81,7 +81,7 @@
   },
   {
     "title": "yarn berry(yarn3) type declarations 에러",
-    "description": "yarn berry 에러",
+    "description": "yarn berry 프로젝트 생성 시 발생하는 module & type 에러 해결",
     "date": "2023-05-07",
     "category": "yarn",
     "path": "yarnberry",
@@ -89,7 +89,7 @@
   },
   {
     "title": "검색엔진 노출 SEO",
-    "description": "SEO 최적화",
+    "description": "SEO에 영향을 주는 것들에 대하여 알아보자",
     "date": "2021-11-30",
     "category": "seo",
     "path": "seo",
@@ -97,7 +97,7 @@
   },
   {
     "title": "perspective",
-    "description": "css animation",
+    "description": "css animation 끄적여보기",
     "date": "2021-11-10",
     "category": "css",
     "path": "css-1",
@@ -105,7 +105,7 @@
   },
   {
     "title": "display flex",
-    "description": "flex 파헤치기",
+    "description": "헷갈리기 쉬운 display flex에 관해 알아보자",
     "date": "2021-11-11",
     "category": "css",
     "path": "flex",
