@@ -24,8 +24,9 @@
 
 ## 서비스 화면
 
-![devlog-1](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/7e27ac92-cfce-42c5-9052-4402a7af3b31)
-![devlog-2](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/464e5013-832f-41b3-986d-8a6cef517c55)
+![블로그1](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/5f2ee6db-4ac0-44a2-aa39-bf3f5c18aa31)
+![블로그2](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/d38e9219-1d29-4948-aa42-16f65a33155d)
+![블로그3](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/0fa3b156-47a5-45d6-8b80-407d7525765d)
 ![devlog-4](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/aae21c69-9e46-4862-a7fc-343100b4d021)
 ![devlog-6](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/c077b29f-e3c2-4226-99e6-489d3a118e3e)
 
@@ -34,10 +35,10 @@
 <a href="https://pyeongdevlog.vercel.app/" target="_blank">Pyeong devlog</a>
 
 ## 업데이트
-# 2021-06-01
+### 2023-06-01
 - 캐러셀 컴포넌트 삭제
 - 모바일용 NavBar 추가 및 컴포넌트 분리
   -> 모바일 화면에서 메뉴 아이콘 클릭 시 모달 애니메이션 추가 
   
 ## 추가에정 기능
-- 댓글 기능
+- 댓글 기능(깃허브 계정)
