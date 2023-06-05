@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function aboutPage() {
+  const devq = ["React", "postCSS", "HTML5", "React-Query", "Firebase"];
   const devlog = ["React", "Next.js", "TailwindCSS", "HTML5", "CSS3"];
   const rocket = [
     "React",
@@ -73,6 +74,35 @@ export default function aboutPage() {
       </section>
       <section className="py-4 border-b border-b-gray-300">
         <h2 className="mb-8 text-xl font-bold text-my-color">PROJECT</h2>
+        <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
+          <h3 className="text-xl font-bold ">devQ</h3>
+          <p className="mb-2 text-sm text-gray-400 ">2023-05-25 ~ 2023-06-05</p>
+          <ul className="pl-4 text-sm list-disc">
+            <li>React로 만든 프론트엔드 면접 준비 사이트</li>
+            <li>다크모드 적용(Context)</li>
+            <li>반응형 웹 디자인</li>
+            <li>리액트 쿼리로 서버데이터 관리</li>
+            <li>렌더링 시 질문 리스트 랜덤으로 형성</li>
+          </ul>
+          <ul className="flex flex-wrap gap-4 text-sm">
+            {devq.map((lang, index) => (
+              <li
+                className="px-2 font-bold text-white rounded-full bg-my-color"
+                key={index}
+              >
+                {lang}
+              </li>
+            ))}
+          </ul>
+          <div className="flex justify-end gap-2">
+            <a href="https://github.com/pyeong777/devQ" target="_blank">
+              <AiFillGithub className="w-8 h-8" />
+            </a>
+            <a href="https://devq.netlify.app/" target="_blank">
+              <AiOutlinePaperClip className="w-8 h-8" />
+            </a>
+          </div>
+        </div>
         <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
           <h3 className="text-xl font-bold ">Devlog</h3>
           <p className="mb-2 text-sm text-gray-400 ">2023-05-12 ~ 2023-05-24</p>
