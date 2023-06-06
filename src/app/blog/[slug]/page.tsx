@@ -2,6 +2,7 @@ import Image from "next/image";
 import MarkDownViewer from "@/components/MarkdownViewer";
 import { getAllPosts, getPostData } from "@/service/posts";
 import { Metadata } from "next";
+import Comment from "@/components/Comment";
 
 type Props = {
   params: {
@@ -40,6 +41,7 @@ export default async function PostPage({ params: { slug } }: Props) {
           />
         </div>
         <MarkDownViewer content={content} />
+        <Comment />
       </section>
     </article>
   );
