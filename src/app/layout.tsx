@@ -23,10 +23,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="{sans.className}">
-      <body className="box-border flex flex-col w-full max-w-4xl mx-auto scrollbar-hide">
-        <Header />
-        <main className="px-4 sm:px-12 grow">{children}</main>
-        <Footer />
+      <body className="scrollbar-hide">
+        <div className="box-border flex flex-col w-full max-w-4xl mx-auto">
+          <Header />
+          <main className="px-4 sm:px-12 grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
