@@ -3,7 +3,7 @@ import MobileNav from "./MobileNav";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-12 py-8">
+    <header className="flex items-center justify-between px-4 py-8 sm:px-12">
       <Link href="/">
         <h1 className="text-xl font-bold">&#60;Pyeong devlog &#47;&#62;</h1>
       </Link>
