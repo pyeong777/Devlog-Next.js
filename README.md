@@ -14,7 +14,6 @@
 <img src="https://img.shields.io/badge/GitHub-181717?style=flat-squre&logo=Github&logoColor=white">
 </div>
 
-
 ## 주요 기능
 
 - post 카테고리 분류 기능
@@ -30,15 +29,22 @@
 ![devlog-4](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/aae21c69-9e46-4862-a7fc-343100b4d021)
 ![devlog-6](https://github.com/pyeong777/Devlog-Next.js/assets/80046065/c077b29f-e3c2-4226-99e6-489d3a118e3e)
 
-
 ## 서비스 페이지
+
 <a href="https://pyeongdevlog.vercel.app/" target="_blank">Pyeong devlog</a>
 
 ## 업데이트
+
 ### 2023-06-01
+
 - 캐러셀 컴포넌트 삭제
 - 모바일용 NavBar 추가 및 컴포넌트 분리
-  -> 모바일 화면에서 메뉴 아이콘 클릭 시 모달 애니메이션 추가 
-  
-## 추가에정 기능
-- 댓글 기능(깃허브 계정)
+  -> 모바일 화면에서 메뉴 아이콘 클릭 시 모달 애니메이션 추가
+
+### 2023-06-06
+
+- 깃허브 계정 Comment 컴포넌트 추가
+
+## 추가예정 기능
+
+- 다크모드
