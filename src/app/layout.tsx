@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en" className="{sans.className}">
       <body className="box-border flex flex-col w-full max-w-4xl mx-auto scrollbar-hide">
         <Header />
-        <main className="px-12 grow">{children}</main>
+        <main className="px-0 sm:px-12 grow">{children}</main>
         <Footer />
       </body>
     </html>

@@ -24,10 +24,10 @@ export default async function PostPage({ params: { slug } }: Props) {
   return (
     <article className="m-4">
       <section className="flex flex-col p-4 m-auto">
-        <h1 className="mb-5 text-3xl font-bold">{title}</h1>
-        <div className="flex">
-          <p>{description}&nbsp;·&nbsp;</p>
-          <p className="text-gray-700">{date.toString()}</p>
+        <h1 className="mb-5 text-2xl font-bold sm:text-3xl">{title}</h1>
+        <div className="flex flex-col justify-between gap-2 sm:flex-row">
+          <p className="text-xs sm:text-base">{description}</p>
+          <p className="text-gray-500">{date.toString()}</p>
         </div>
         <div className="mt-4 mb-8 border-2 w-44 border-my-color" />
         <Image
