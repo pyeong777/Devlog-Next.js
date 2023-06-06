@@ -110,5 +110,13 @@
     "category": "css",
     "path": "flex",
     "featured": true
+  },
+  {
+    "title": "프로그래머스 LV.1 문제풀이(1)",
+    "description": "Javascript로 푸는 프로그래머스 LV.1",
+    "date": "2023-06-05",
+    "category": "algorithm",
+    "path": "programmers1",
+    "featured": true
   }
 ]
