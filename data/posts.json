@@ -101,7 +101,7 @@
     "date": "2021-11-10",
     "category": "css",
     "path": "css-1",
-    "featured": true
+    "featured": false
   },
   {
     "title": "display flex",
@@ -117,6 +117,14 @@
     "date": "2023-06-05",
     "category": "algorithm",
     "path": "programmers1",
+    "featured": true
+  },
+  {
+    "title": "Tailwind 스크롤바 숨김 처리",
+    "description": "스크롤바 숨김처리를 위한 라이브러리",
+    "date": "2023-06-01",
+    "category": "tailwind",
+    "path": "tailwind-scrollbar-hide",
     "featured": true
   }
 ]
