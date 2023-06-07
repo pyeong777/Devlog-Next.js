@@ -126,5 +126,13 @@
     "category": "tailwind",
     "path": "tailwind-scrollbar-hide",
     "featured": true
+  },
+  {
+    "title": "블로그 구글 검색에 뜨게 하기 with Next.js 13",
+    "description": "google-site-verification metadata 설정",
+    "date": "2023-06-07",
+    "category": "seo",
+    "path": "googlesearch",
+    "featured": true
   }
 ]

@@ -20,6 +20,11 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        hostname: "github.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };
