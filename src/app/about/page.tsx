@@ -5,6 +5,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About me",
   description: "커리어 소개",
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+  },
 };
 
 export default function aboutPage() {

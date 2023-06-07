@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /about/
+
+Sitemap: https://pyeongdevlog.vercel.app/sitemap.xml
