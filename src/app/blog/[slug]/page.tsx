@@ -13,15 +13,28 @@ type Props = {
 export async function generateMetadata({
   params: { slug },
 }: Props): Promise<Metadata> {
-  const { title, description } = await getPostData(slug);
+  const { title, description, path } = await getPostData(slug);
   return {
     title,
     description,
+    openGraph: {
+      title: title,
+      url: `https://pyeongdevlog.vercel.app/blog/${path}`,
+      images: [
+        {
+          type: "image/png",
+          width: 1200,
+          height: 630,
+          url: "/images/ogImage.png",
+        },
+      ],
+    },
   };
 }
 
 export default async function PostPage({ params: { slug } }: Props) {
   const { title, description, date, path, content } = await getPostData(slug);
+
   return (
     <article>
       <section className="flex flex-col mx-auto mt-8">
