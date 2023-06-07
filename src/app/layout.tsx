@@ -17,6 +17,18 @@ export const metadata = {
   verification: {
     google: "eTnvbkwj_4WwczBiML0PIcRuXvA7Mu3MQ8etSZU__pc",
   },
+  openGraph: {
+    title: "Pyeong devlog",
+    url: "https://pyeongdevlog.vercel.app",
+    images: [
+      {
+        type: "image/png",
+        width: 1200,
+        height: 630,
+        url: "/images/ogImage.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
