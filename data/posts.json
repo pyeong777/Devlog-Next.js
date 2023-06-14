@@ -109,7 +109,7 @@
     "date": "2021-11-11",
     "category": "css",
     "path": "flex",
-    "featured": true
+    "featured": false
   },
   {
     "title": "프로그래머스 LV.1 문제풀이(1)",
@@ -133,6 +133,22 @@
     "date": "2023-06-07",
     "category": "seo",
     "path": "googlesearch",
+    "featured": true
+  },
+  {
+    "title": "Sanity 세팅 yarn 에러",
+    "description": "Command failed with exit code 1 & postcss 에러",
+    "date": "2023-06-14",
+    "category": "sanity",
+    "path": "sanity-error",
+    "featured": true
+  },
+  {
+    "title": "Next13 에서 next-auth 사용하기",
+    "description": "Next13 app directory에서 next-auth를 사용해보자",
+    "date": "2023-06-15",
+    "category": "nextauth",
+    "path": "next-auth",
     "featured": true
   }
 ]
