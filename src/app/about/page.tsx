@@ -139,35 +139,7 @@ export default function aboutPage() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
-          <h3 className="text-xl font-bold ">Rocket</h3>
-          <p className="mb-2 text-sm text-gray-400 ">2023-04-12~ 2023-05-02</p>
-          <ul className="pl-4 text-sm list-disc">
-            <li>React를 사용하여 진행한 쇼핑몰 개인 프로젝트</li>
-            <li>React-Query를 사용하여 서버 상태관리</li>
-            <li>Firebase API를 사용하여 데이터베이스 관리</li>
-            <li>Cloudinay를 사용하여 이미지 호스팅 관리</li>
-          </ul>
-          <ul className="flex flex-wrap gap-4 text-sm">
-            {rocket.map((lang, index) => (
-              <li
-                className="px-2 font-bold text-white rounded-full bg-my-color"
-                key={index}
-              >
-                {lang}
-              </li>
-            ))}
-          </ul>
-          <div className="flex justify-end gap-2">
-            <a href="https://github.com/pyeong777/Rocket" target="_blank">
-              <AiFillGithub className="w-8 h-8" />
-            </a>
-            <a href="https://rocketmall.netlify.app/" target="_blank">
-              <AiOutlinePaperClip className="w-8 h-8" />
-            </a>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
+        <div className="flex flex-col gap-4 py-4">
           <h3 className="text-xl font-bold ">감귤마켓</h3>
           <p className="mb-2 text-sm text-gray-400 ">2022-01-03 ~ 2022-01-17</p>
           <ul className="pl-4 text-sm list-disc">
@@ -194,35 +166,6 @@ export default function aboutPage() {
               <AiFillGithub className="w-8 h-8" />
             </a>
             <a href="https://gamguel-market.netlify.app/" target="_blank">
-              <AiOutlinePaperClip className="w-8 h-8" />
-            </a>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4 py-4">
-          <h3 className="text-xl font-bold ">주간플래너</h3>
-          <p className="mb-2 text-sm text-gray-400 ">2021-12-07 ~ 2021-12-16</p>
-          <ul className="pl-4 text-sm list-disc">
-            <li>자바스크립트 연습을 위한 개인 프로젝트</li>
-            <li>자바스크립트를 이용한 돔 조작과 이벤트 처리</li>
-          </ul>
-          <ul className="flex flex-wrap gap-4 text-sm">
-            {vanilla.map((lang, index) => (
-              <li
-                className="px-2 font-bold text-white rounded-full bg-my-color"
-                key={index}
-              >
-                {lang}
-              </li>
-            ))}
-          </ul>
-          <div className="flex justify-end gap-2">
-            <a
-              href="https://github.com/pyeong777/weekly_planner"
-              target="_blank"
-            >
-              <AiFillGithub className="w-8 h-8" />
-            </a>
-            <a href="https://my-weekly-plan.netlify.app/" target="_blank">
               <AiOutlinePaperClip className="w-8 h-8" />
             </a>
           </div>
