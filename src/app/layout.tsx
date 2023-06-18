@@ -2,6 +2,8 @@ import "./globals.css";
 import { Open_Sans } from "next/font/google";
 import Footer from "./../components/Footer";
 import Header from "./../components/Header";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import CookieBanner from "@/components/CookieBanner";
 
 const sans = Open_Sans({ subsets: ["latin"] });
 
@@ -37,11 +39,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="{sans.className}">
+    <html lang="en" className={sans.className}>
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-FMLGZTY14X" />
       <body className="scrollbar-hide">
         <div className="box-border flex flex-col w-full max-w-4xl mx-auto">
           <Header />
-          <main className="px-4 sm:px-12 grow">{children}</main>
+          <main className="px-4 sm:px-12 grow">
+            {children} <CookieBanner />
+          </main>
           <Footer />
         </div>
       </body>
