@@ -17,7 +17,7 @@ export const metadata = {
     icon: "/favicon.ico",
   },
   verification: {
-    google: "eTnvbkwj_4WwczBiML0PIcRuXvA7Mu3MQ8etSZU__pc",
+    google: "google6886cc9475427fb6.html",
   },
   openGraph: {
     title: "Pyeong devlog",
