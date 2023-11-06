@@ -20,7 +20,7 @@ export default function CookieBanner() {
       analytics_storage: newValue,
     });
 
-    setLocalStorage("cookie_consent", cookieConsent);
+    setLocalStorage("cookie_consent", cookieConsent, 24);
   }, [cookieConsent]);
 
   return (
