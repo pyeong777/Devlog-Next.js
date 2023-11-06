@@ -21,7 +21,10 @@ export const metadata = {
   },
   openGraph: {
     title: "Pyeong devlog",
-    url: "https://pyeongdevlog.vercel.app",
+    description: "Pyeong 개발 블로그",
+    type: "website",
+    locale: "ko_KR",
+    url: "https://pyeongdevlog.vercel.app/",
     images: [
       {
         type: "image/png",
@@ -40,9 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={sans.className}>
-      <head>
-        <GoogleAnalytics GA_MEASUREMENT_ID="G-FMLGZTY14X" />
-      </head>
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-FMLGZTY14X" />
       <body className="scrollbar-hide">
         <div className="box-border flex flex-col w-full max-w-4xl mx-auto">
           <Header />

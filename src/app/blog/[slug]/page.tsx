@@ -19,6 +19,10 @@ export async function generateMetadata({
     description,
     openGraph: {
       title: title,
+      description: description,
+      siteName: "Pyeong devlog",
+      locale: "ko_KR",
+      type: "website",
       url: `https://pyeongdevlog.vercel.app/blog/${path}`,
       images: [
         {
