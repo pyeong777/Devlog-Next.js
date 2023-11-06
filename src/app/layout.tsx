@@ -16,9 +16,9 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  // verification: {
-  //   google: "eTnvbkwj_4WwczBiML0PIcRuXvA7Mu3MQ8etSZU__pc",
-  // },
+  verification: {
+    google: "eTnvbkwj_4WwczBiML0PIcRuXvA7Mu3MQ8etSZU__pc",
+  },
   openGraph: {
     title: "Pyeong devlog",
     url: "https://pyeongdevlog.vercel.app",
@@ -41,12 +41,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={sans.className}>
       <head>
-        <meta
-          name="google-site-verification"
-          content="eTnvbkwj_4WwczBiML0PIcRuXvA7Mu3MQ8etSZU__pc"
-        />
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-FMLGZTY14X" />
       </head>
-      <GoogleAnalytics GA_MEASUREMENT_ID="G-FMLGZTY14X" />
       <body className="scrollbar-hide">
         <div className="box-border flex flex-col w-full max-w-4xl mx-auto">
           <Header />
