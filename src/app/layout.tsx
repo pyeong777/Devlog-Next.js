@@ -4,10 +4,11 @@ import Footer from "./../components/Footer";
 import Header from "./../components/Header";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
+import { Metadata } from "next";
 
 const sans = Open_Sans({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     default: "Pyeong devlog",
     template: "Pyeong devlog | %s",
