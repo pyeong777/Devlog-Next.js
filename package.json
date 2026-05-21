@@ -11,6 +11,9 @@
     "validate-posts": "node scripts/validate-posts.mjs",
     "check": "npm run validate-posts && npm run lint && npm run build"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "gray-matter": "^4.0.3",
     "next": "^16.2.6",
