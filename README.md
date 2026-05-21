@@ -23,6 +23,7 @@
 - Markdown frontmatter 기반 포스트 관리
 - 포스트 유효성 검증 스크립트
 - 게시글 이미지 확대 보기
+- 홈 화면 최신순 전체 포스트 노출
 
 ## 서비스 화면
 
@@ -63,4 +64,5 @@
 - 쿠키 배너 hydration 오류 수정
 - 모바일 화면 높이/스크롤 잘림 문제 수정
 - About 프로필, 경력, 기술 스택 정보 정리
-- canonical, Open Graph, Twitter card, sitemap, BlogPosting JSON-LD 등 SEO 메타데이터 보강
+- site metadata 공통 상수 추가
+- canonical, Open Graph article, Twitter card, sitemap, robots, BlogPosting JSON-LD 등 SEO 메타데이터 보강

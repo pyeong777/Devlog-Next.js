@@ -1,9 +1,9 @@
-import { getFeaturedPosts } from "@/service/posts";
+import { getAllPosts } from "@/service/posts";
 import PostGrid from "./PostGrid";
 import Link from "next/link";
 
 export default async function FeaturedPosts() {
-  const posts = await getFeaturedPosts();
+  const posts = await getAllPosts();
 
   return (
     <section className="my-16">
@@ -11,7 +11,7 @@ export default async function FeaturedPosts() {
       <PostGrid posts={posts} />
       <div className="flex justify-end">
         <Link className="text-my-color" href="/blog">
-          모든 포스트 &rarr;
+          카테고리별로 보기 &rarr;
         </Link>
       </div>
     </section>
