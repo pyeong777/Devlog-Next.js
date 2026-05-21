@@ -1,56 +1,76 @@
 "use client";
 
 import { getLocalStorage, setLocalStorage } from "@/lib/storageHelper";
-import { useState, useEffect } from "react";
+import { useSyncExternalStore } from "react";
 import Link from "next/link";
 
-export default function CookieBanner() {
-  const [cookieConsent, setCookieConsent] = useState(false);
+const COOKIE_CONSENT_KEY = "cookie_consent";
+const COOKIE_CONSENT_EVENT = "cookie_consent_changed";
 
-  useEffect(() => {
-    const storedCookieConsent = getLocalStorage("cookie_consent", null);
+function getConsentSnapshot() {
+  return getLocalStorage<boolean | null>(COOKIE_CONSENT_KEY, null);
+}
 
-    setCookieConsent(storedCookieConsent);
-  }, [setCookieConsent]);
+function getServerSnapshot() {
+  return null;
+}
 
-  useEffect(() => {
-    const newValue = cookieConsent ? "granted" : "denied";
+function subscribe(onStoreChange: () => void) {
+  window.addEventListener("storage", onStoreChange);
+  window.addEventListener(COOKIE_CONSENT_EVENT, onStoreChange);
 
-    window.gtag("consent", "update", {
+  return () => {
+    window.removeEventListener("storage", onStoreChange);
+    window.removeEventListener(COOKIE_CONSENT_EVENT, onStoreChange);
+  };
+}
+
+function updateAnalyticsConsent(cookieConsent: boolean) {
+  const newValue = cookieConsent ? "granted" : "denied";
+
+  if (typeof gtag === "function") {
+    gtag("consent", "update", {
       analytics_storage: newValue,
     });
+  }
+}
 
-    setLocalStorage("cookie_consent", cookieConsent, 24);
-  }, [cookieConsent]);
+function saveConsent(cookieConsent: boolean) {
+  updateAnalyticsConsent(cookieConsent);
+  setLocalStorage(COOKIE_CONSENT_KEY, cookieConsent, 24);
+  window.dispatchEvent(new Event(COOKIE_CONSENT_EVENT));
+}
+
+export default function CookieBanner() {
+  const cookieConsent = useSyncExternalStore(
+    subscribe,
+    getConsentSnapshot,
+    getServerSnapshot
+  );
+
+  if (cookieConsent !== null) {
+    return null;
+  }
 
   return (
-    <div
-      className={`my-10 mx-auto max-w-max md:max-w-screen-sm
-                        fixed bottom-0 left-0 right-0 
-                        flex px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4  
-                         bg-gray-700 rounded-lg shadow  ${
-                           cookieConsent != null ? "hidden" : "flex"
-                         }`}
-    >
-      <div className="text-center">
+    <div className="fixed bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-between max-w-screen-sm gap-4 px-3 py-3 mx-auto my-10 bg-gray-700 rounded-lg shadow md:px-4 sm:flex-row">
+      <div className="text-center text-white">
         <Link href="/info/cookies">
-          <p>
-            We use <span className="font-bold text-sky-400">cookies</span> on
-            our site.
-          </p>
+          We use <span className="font-bold text-sky-400">cookies</span> on our
+          site.
         </Link>
       </div>
 
       <div className="flex gap-2">
         <button
-          className="px-5 py-2 text-gray-300 border-gray-900 rounded-md"
-          onClick={() => setCookieConsent(false)}
+          className="px-5 py-2 text-gray-300 border border-gray-500 rounded-md"
+          onClick={() => saveConsent(false)}
         >
           거부
         </button>
         <button
-          className="px-5 py-2 text-white bg-gray-900 rounded-lg"
-          onClick={() => setCookieConsent(true)}
+          className="px-5 py-2 text-white bg-gray-900 rounded-md"
+          onClick={() => saveConsent(true)}
         >
           쿠키 허용
         </button>

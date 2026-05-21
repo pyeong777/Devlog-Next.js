@@ -1,13 +1,19 @@
 import "client-only";
 
-export function getLocalStorage(key: string, defaultValue: any) {
+type StoredItem<T> = {
+  value: T;
+  expires: number;
+};
+
+export function getLocalStorage<T>(key: string, defaultValue: T) {
   const stickyValue = localStorage.getItem(key);
-  let now = new Date();
+  const now = new Date();
+
   if (stickyValue == null || stickyValue == "undefined") {
     return defaultValue;
   }
 
-  const item = JSON.parse(stickyValue);
+  const item = JSON.parse(stickyValue) as StoredItem<T>;
   if (now.getTime() > item.expires) {
     localStorage.removeItem(key);
     return defaultValue;
@@ -16,8 +22,8 @@ export function getLocalStorage(key: string, defaultValue: any) {
   return item.value;
 }
 
-export function setLocalStorage(key: string, value: any, exp: number) {
-  let now = new Date();
+export function setLocalStorage<T>(key: string, value: T, exp: number) {
+  const now = new Date();
   const item = { value: value, expires: now.getTime() + exp * 60 * 60 * 1000 };
   localStorage.setItem(key, JSON.stringify(item));
 }

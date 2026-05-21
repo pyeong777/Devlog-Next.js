@@ -15,15 +15,6 @@ export const metadata: Metadata = {
 export default function aboutPage() {
   const devq = ["React", "postCSS", "HTML5", "React-Query", "Firebase"];
   const devlog = ["React", "Next.js", "TailwindCSS", "HTML5", "CSS3"];
-  const rocket = [
-    "React",
-    "Firebase",
-    "Cloudinary",
-    "React-Query",
-    "TailwindCSS",
-    "HTML5",
-    "CSS3",
-  ];
   const vanilla = ["Javascript", "HTML5", "CSS3"];
   return (
     <article className="w-full max-w-5xl p-10 mx-auto my-8 bg-slate-50">

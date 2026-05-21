@@ -1,3 +1,12 @@
+---
+title: display flex
+description: 헷갈리기 쉬운 display flex에 관해 알아보자
+date: '2021-11-11'
+category: css
+path: flex
+featured: false
+image: /images/posts/flex.png
+---
 ### 레이아웃
 
 ✅ 수평정렬 inline-block 사용시, 블록 사이 공백이 생기게 된다. 이를 해결하려면 부모요소에 font-size:0 을 부여해주고 자식에게 다시 font-size를 알맞게 설정해주면 된다.

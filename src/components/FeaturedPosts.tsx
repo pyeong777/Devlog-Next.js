@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export default async function FeaturedPosts() {
   const posts = await getFeaturedPosts();
+
   return (
     <section className="my-16">
       <h2 className="text-2xl font-bold">Post</h2>

@@ -1,3 +1,12 @@
+---
+title: Next13 에서 next-auth 사용하기
+description: Next13 app directory에서 next-auth를 사용해보자
+date: '2023-06-15'
+category: nextauth
+path: next-auth
+featured: true
+image: /images/posts/next-auth.png
+---
 ## 1. app directory에서의 폴더 설정
 
 아래 사진과 같이 app > api > auth > […nextauth] > rotue.ts 폴더를 만들어 줍니다.

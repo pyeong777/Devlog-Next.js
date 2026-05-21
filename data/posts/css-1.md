@@ -1,3 +1,12 @@
+---
+title: perspective
+description: css animation 끄적여보기
+date: '2021-11-10'
+category: css
+path: css-1
+featured: false
+image: /images/posts/css-1.png
+---
 ## 👨‍💻TIL
 
 ### perspective(원근법)

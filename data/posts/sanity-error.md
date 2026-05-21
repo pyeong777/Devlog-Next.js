@@ -1,3 +1,12 @@
+---
+title: Sanity 세팅 yarn 에러
+description: Command failed with exit code 1 & postcss 에러
+date: '2023-06-14'
+category: sanity
+path: sanity-error
+featured: true
+image: /images/posts/sanity-error.png
+---
 ```jsx
 $ yarn install [--json] [--immutable] [--immutable-cache] [--check-cache] [--inline-builds] [--mode #0]
 

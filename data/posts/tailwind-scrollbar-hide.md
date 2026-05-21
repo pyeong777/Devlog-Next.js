@@ -1,3 +1,12 @@
+---
+title: Tailwind 스크롤바 숨김 처리
+description: 스크롤바 숨김처리를 위한 라이브러리
+date: '2023-06-01'
+category: tailwind
+path: tailwind-scrollbar-hide
+featured: true
+image: /images/posts/tailwind-scrollbar-hide.png
+---
 # Tailwind-scrollbar-hide
 
 개발 블로그 UI에 스크롤바가 없으면 좋겠다고 생각이 들어서 적용한 라이브러리이다.

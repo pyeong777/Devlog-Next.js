@@ -1,3 +1,12 @@
+---
+title: 프로그래머스 LV.1 문제풀이(1)
+description: Javascript로 푸는 프로그래머스 LV.1
+date: '2023-06-05'
+category: algorithm
+path: programmers1
+featured: true
+image: /images/posts/programmers1.png
+---
 ## 나머지가 1이 되는 수 찾기
 
 자연수 `n`이 매개변수로 주어집니다. `n`을 `x`로 나눈 나머지가 1이 되도록 하는 가장 작은 자연수 `x`를 return 하도록 solution 함수를 완성해주세요. 답이 항상 존재함은 증명될 수 있습니다.

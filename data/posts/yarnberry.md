@@ -1,3 +1,12 @@
+---
+title: yarn berry(yarn3) type declarations 에러
+description: yarn berry 프로젝트 생성 시 발생하는 module & type 에러 해결
+date: '2023-05-07'
+category: yarn
+path: yarnberry
+featured: true
+image: /images/posts/yarnberry.png
+---
 ## yarn berry + next.js + typescript 프로젝트 생성 시 import & module or type declarations 오류가 뜨는 경우
 
 해결법

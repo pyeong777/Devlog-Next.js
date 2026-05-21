@@ -1,8 +1,6 @@
 "use client";
 import { ChangeEvent, FormEvent, useState } from "react";
 import Banner, { BannerData } from "./Banner";
-import { confirmAlert } from "react-confirm-alert";
-import "react-confirm-alert/src/react-confirm-alert.css";
 import { sendContactEmail } from "@/service/contact";
 
 type Form = {

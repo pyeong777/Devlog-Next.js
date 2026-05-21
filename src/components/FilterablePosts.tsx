@@ -18,6 +18,7 @@ export default function FilterablePosts({ posts, categories }: Props) {
     selected === ALL_POSTS
       ? posts
       : posts.filter((post) => post.category === selected);
+
   return (
     <>
       <section>

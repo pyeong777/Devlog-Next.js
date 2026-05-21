@@ -1,3 +1,12 @@
+---
+title: 검색엔진 노출 SEO
+description: SEO에 영향을 주는 것들에 대하여 알아보자
+date: '2021-11-30'
+category: seo
+path: seo
+featured: true
+image: /images/posts/seo.png
+---
 **html을 이용해 검색엔진에 잘 노출될수 있도록 만들 수 있다.
 그동안 중요하게 생각하지 않았던 요소와 속성을 활용해서 검색엔진 도달률을 높일수 있다.**
 

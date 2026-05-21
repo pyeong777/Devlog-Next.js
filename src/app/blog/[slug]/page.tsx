@@ -3,41 +3,53 @@ import MarkDownViewer from "@/components/MarkdownViewer";
 import { getAllPosts, getPostData } from "@/service/posts";
 import { Metadata } from "next";
 import Comment from "@/components/Comment";
+import { notFound } from "next/navigation";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export async function generateMetadata({
-  params: { slug },
+  params,
 }: Props): Promise<Metadata> {
-  const { title, description, path } = await getPostData(slug);
+  const { slug } = await params;
+  const { title, description, path, image } = await getPostData(slug);
   return {
     title,
     description,
+    alternates: {
+      canonical: `/blog/${path}`,
+    },
     openGraph: {
       title: title,
       description: description,
       siteName: "Pyeong devlog",
       locale: "ko_KR",
       type: "website",
-      url: `https://pyeongdevlog.vercel.app/blog/${path}`,
+      url: `/blog/${path}`,
       images: [
         {
           type: "image/png",
           width: 1200,
           height: 630,
-          url: "/images/ogImage.png",
+          url: image,
         },
       ],
     },
   };
 }
 
-export default async function PostPage({ params: { slug } }: Props) {
-  const { title, description, date, path, content } = await getPostData(slug);
+export default async function PostPage({ params }: Props) {
+  const { slug } = await params;
+  const post = await getPostData(slug).catch(() => null);
+
+  if (!post) {
+    notFound();
+  }
+
+  const { title, description, date, image, content } = post;
 
   return (
     <article>
@@ -51,7 +63,7 @@ export default async function PostPage({ params: { slug } }: Props) {
         <div className="mx-auto">
           <Image
             className="mb-4"
-            src={`/images/posts/${path}.png`}
+            src={image}
             alt={title}
             width={760}
             height={420}
