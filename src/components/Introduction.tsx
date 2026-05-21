@@ -9,7 +9,7 @@ export default function Introduction() {
           <p>경험한 것들을 기록으로 남기고 있습니다.</p>
         </h2>
         <h3 className="mt-3 text-xs text-gray-400 lg:text-sm">
-          {"A front-end developer's technical blog to record experiences."}
+          {"A junior developer's technical blog to record experiences."}
         </h3>
       </div>
       <div className="lg:mr-6">

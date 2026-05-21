@@ -137,7 +137,7 @@ export default function aboutPage() {
       <section className="py-4">
         <h2 className="mb-8 text-xl font-bold text-my-color">DEV EXPERIENCE</h2>
         <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
-          <h3 className="text-xl font-bold ">보인정보기술</h3>
+          <h3 className="text-xl font-bold ">보인정보기술 PDF팀</h3>
           <p className="mb-2 text-sm text-gray-400 ">2024.04 ~ 재직중</p>
           <ul className="pl-4 text-sm list-decimal">
             <li>개발 도구의 QA 및 테스트를 진행하여 고도화 작업 진행</li>
