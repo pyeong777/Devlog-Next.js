@@ -5,6 +5,9 @@ import { AiFillGithub } from "react-icons/ai";
 export const metadata: Metadata = {
   title: "Contact me",
   description: "메일 보내기",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function contactPage() {

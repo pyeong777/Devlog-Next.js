@@ -18,8 +18,11 @@
 
 - post 카테고리 분류 기능
 - 반응형 웹 디자인
-- Next.js 13버전 클라이언트 & 서버 컴포넌트 기능 활용
+- Next.js App Router 기반 클라이언트 & 서버 컴포넌트 기능 활용
 - SEO 최적화
+- Markdown frontmatter 기반 포스트 관리
+- 포스트 유효성 검증 스크립트
+- 게시글 이미지 확대 보기
 
 ## 서비스 화면
 
@@ -48,3 +51,16 @@
 ### 2023-06-08
 
 - metadata og tag 추가
+
+### 2026-05-21
+
+- Next.js 16, React 19 기반으로 프로젝트 업그레이드
+- Yarn Berry 구성을 npm 기반으로 정리하고 Vercel 빌드 설정 고정
+- 포스트 메타데이터를 JSON 파일에서 Markdown frontmatter로 이전
+- 포스트 생성 및 검증 스크립트 추가
+- GitHub Actions CI 추가
+- 게시글 이미지 클릭 확대 기능 추가
+- 쿠키 배너 hydration 오류 수정
+- 모바일 화면 높이/스크롤 잘림 문제 수정
+- About 프로필, 경력, 기술 스택 정보 정리
+- canonical, Open Graph, Twitter card, sitemap, BlogPosting JSON-LD 등 SEO 메타데이터 보강

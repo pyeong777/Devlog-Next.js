@@ -5,17 +5,28 @@ import Header from "@/components/Header";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
 import { Metadata } from "next";
+import {
+  authorName,
+  authorUrl,
+  defaultOgImage,
+  siteDescription,
+  siteName,
+  siteUrl,
+} from "@/lib/siteMetadata";
 
 const sans = Open_Sans({ subsets: ["latin"] });
-const siteUrl = new URL("https://pyeongdevlog.vercel.app");
 
 export const metadata: Metadata = {
-  metadataBase: siteUrl,
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Pyeong devlog",
-    template: "Pyeong devlog | %s",
+    default: siteName,
+    template: `${siteName} | %s`,
   },
-  description: "Pyeong 개발 블로그",
+  description: siteDescription,
+  keywords: ["개발 블로그", "Next.js", "React", "PDF Toolkit", "접근성 PDF"],
+  authors: [{ name: authorName, url: authorUrl }],
+  creator: authorName,
+  publisher: authorName,
   alternates: {
     canonical: "/",
   },
@@ -25,20 +36,38 @@ export const metadata: Metadata = {
   verification: {
     google: "eTnvbkwj_4WwczBiML0PIcRuXvA7Mu3MQ8etSZU__pc",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
-    title: "Pyeong devlog",
-    description: "Pyeong 개발 블로그",
+    title: siteName,
+    description: siteDescription,
     type: "website",
     locale: "ko_KR",
     url: "/",
+    siteName,
     images: [
       {
         type: "image/png",
         width: 1200,
         height: 630,
-        url: "/images/ogImage.png",
+        url: defaultOgImage,
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description: siteDescription,
+    images: [defaultOgImage],
   },
 };
 

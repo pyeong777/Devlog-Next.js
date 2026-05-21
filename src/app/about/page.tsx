@@ -4,11 +4,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About me",
-  description: "커리어 소개",
-  robots: {
-    index: false,
-    follow: true,
-    nocache: true,
+  description: "주니어 개발자 서대평의 경력, 프로젝트, 기술 스택 소개",
+  alternates: {
+    canonical: "/about",
   },
 };
 

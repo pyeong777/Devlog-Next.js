@@ -1,6 +1,7 @@
 import FilterablePosts from "@/components/FilterablePosts";
 import { getAllPosts } from "@/service/posts";
 import { Metadata } from "next";
+import { defaultOgImage, siteDescription, siteName } from "@/lib/siteMetadata";
 
 export const metadata: Metadata = {
   title: "All post",
@@ -9,16 +10,24 @@ export const metadata: Metadata = {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Pyeong devlog | All post",
+    title: `${siteName} | All post`,
+    description: siteDescription,
     url: "/blog",
+    siteName,
     images: [
       {
         type: "image/png",
         width: 1200,
         height: 630,
-        url: "/images/ogImage.png",
+        url: defaultOgImage,
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteName} | All post`,
+    description: "개발 관련 블로그 포스트",
+    images: [defaultOgImage],
   },
 };
 

@@ -4,6 +4,12 @@ import { getAllPosts, getPostData } from "@/service/posts";
 import { Metadata } from "next";
 import Comment from "@/components/Comment";
 import { notFound } from "next/navigation";
+import {
+  absoluteUrl,
+  authorName,
+  authorUrl,
+  siteName,
+} from "@/lib/siteMetadata";
 
 type Props = {
   params: Promise<{
@@ -15,20 +21,26 @@ export async function generateMetadata({
   params,
 }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const { title, description, path, image } = await getPostData(slug);
+  const { title, description, path, image, date, category } =
+    await getPostData(slug);
+  const url = `/blog/${path}`;
   return {
     title,
     description,
     alternates: {
-      canonical: `/blog/${path}`,
+      canonical: url,
     },
     openGraph: {
       title: title,
       description: description,
-      siteName: "Pyeong devlog",
+      siteName,
       locale: "ko_KR",
-      type: "website",
-      url: `/blog/${path}`,
+      type: "article",
+      url,
+      publishedTime: date,
+      modifiedTime: date,
+      authors: [authorName],
+      tags: [category],
       images: [
         {
           type: "image/png",
@@ -37,6 +49,12 @@ export async function generateMetadata({
           url: image,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
     },
   };
 }
@@ -49,10 +67,38 @@ export default async function PostPage({ params }: Props) {
     notFound();
   }
 
-  const { title, description, date, image, content } = post;
+  const { title, description, date, image, path, content } = post;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description,
+    datePublished: date,
+    dateModified: date,
+    image: absoluteUrl(image),
+    url: absoluteUrl(`/blog/${path}`),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": absoluteUrl(`/blog/${path}`),
+    },
+    author: {
+      "@type": "Person",
+      name: authorName,
+      url: authorUrl,
+    },
+    publisher: {
+      "@type": "Person",
+      name: authorName,
+      url: authorUrl,
+    },
+  };
 
   return (
     <article>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="flex flex-col mx-auto mt-8">
         <h1 className="mb-5 text-2xl font-bold sm:text-3xl">{title}</h1>
         <div className="flex flex-col justify-between gap-2 sm:flex-row">
