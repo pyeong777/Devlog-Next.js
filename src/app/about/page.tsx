@@ -31,7 +31,7 @@ export default function aboutPage() {
           <h2 className="text-sm font-bold lg:text-xl">
             안녕하세요, 주니어 개발자 서대평입니다.
           </h2>
-          <p>FrontEnd Developer</p>
+          <p>Junior Developer</p>
           <p className="text-sm text-my-color">
             항상 사용자의 입장에서 고민하고 개발하려고 노력합니다. 또한 새롭고
             흥미로운 것이 생기면 빠르게 도전하고 실행합니다.
