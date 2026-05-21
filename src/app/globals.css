@@ -4,10 +4,17 @@
 
 html,
 body {
-  height: 100vh;
-  overflow-y: auto;
   background-color: #f9fafa;
   margin: 0 auto;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  overflow-x: hidden;
 }
 
 .scrollbar-hide {

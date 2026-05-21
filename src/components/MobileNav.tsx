@@ -11,7 +11,7 @@ export default function MobileNav() {
   const handleClickToggle = () => {
     setIsShow((prop) => {
       if (prop) {
-        document.body.style.overflow = "overlay";
+        document.body.style.overflow = "";
       } else {
         document.body.style.overflow = "hidden";
       }

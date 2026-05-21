@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="ko" className={sans.className}>
       <body className="scrollbar-hide">
         <GoogleAnalytics GA_MEASUREMENT_ID="G-FMLGZTY14X" />
-        <div className="box-border flex flex-col w-full max-w-4xl mx-auto">
+        <div className="box-border flex flex-col w-full min-h-dvh max-w-4xl mx-auto">
           <Header />
           <main className="px-4 sm:px-12 grow">
             {children} <CookieBanner />
