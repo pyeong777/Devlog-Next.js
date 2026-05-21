@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 };
 
 export default function aboutPage() {
-  const devq = ["React", "postCSS", "HTML5", "React-Query", "Firebase"];
   const devlog = ["React", "Next.js", "TailwindCSS", "HTML5", "CSS3"];
   const vanilla = ["Javascript", "HTML5", "CSS3"];
   return (
@@ -30,7 +29,7 @@ export default function aboutPage() {
         </div>
         <div className="flex flex-col gap-4 p-2 mt-10 lg:ml-10 lg:mt-0">
           <h2 className="text-sm font-bold lg:text-xl">
-            안녕하세요, 주니어 프론트엔드 개발자 서대평입니다.
+            안녕하세요, 주니어 개발자 서대평입니다.
           </h2>
           <p>FrontEnd Developer</p>
           <p className="text-sm text-my-color">
@@ -47,6 +46,7 @@ export default function aboutPage() {
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
+            <li>Python</li>
           </ul>
         </div>
         <div className="py-4">
@@ -62,6 +62,7 @@ export default function aboutPage() {
           <h3 className="mb-6 text-gray-500">Server & DevOps & Tools</h3>
           <ul className="grid grid-cols-2 gap-2 text-sm font-bold lg:grid-cols-4 lg:gap-4">
             <li>Github</li>
+            <li>Codex</li>
             <li>Figma</li>
             <li>Firebase</li>
             <li>Cloudinary</li>
@@ -70,35 +71,6 @@ export default function aboutPage() {
       </section>
       <section className="py-4 border-b border-b-gray-300">
         <h2 className="mb-8 text-xl font-bold text-my-color">PROJECT</h2>
-        <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
-          <h3 className="text-xl font-bold ">devQ</h3>
-          <p className="mb-2 text-sm text-gray-400 ">2023-05-25 ~ 2023-06-05</p>
-          <ul className="pl-4 text-sm list-disc">
-            <li>React로 만든 프론트엔드 면접 준비 사이트</li>
-            <li>다크모드 적용(Context)</li>
-            <li>반응형 웹 디자인</li>
-            <li>리액트 쿼리로 서버데이터 관리</li>
-            <li>렌더링 시 질문 리스트 랜덤으로 형성</li>
-          </ul>
-          <ul className="flex flex-wrap gap-4 text-sm">
-            {devq.map((lang, index) => (
-              <li
-                className="px-2 font-bold text-white rounded-full bg-my-color"
-                key={index}
-              >
-                {lang}
-              </li>
-            ))}
-          </ul>
-          <div className="flex justify-end gap-2">
-            <a href="https://github.com/pyeong777/devQ" target="_blank">
-              <AiFillGithub className="w-8 h-8" />
-            </a>
-            <a href="https://devq.netlify.app/" target="_blank">
-              <AiOutlinePaperClip className="w-8 h-8" />
-            </a>
-          </div>
-        </div>
         <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
           <h3 className="text-xl font-bold ">Devlog</h3>
           <p className="mb-2 text-sm text-gray-400 ">2023-05-12 ~ 2023-05-24</p>
@@ -164,6 +136,16 @@ export default function aboutPage() {
       </section>
       <section className="py-4">
         <h2 className="mb-8 text-xl font-bold text-my-color">DEV EXPERIENCE</h2>
+        <div className="flex flex-col gap-4 py-4 border-b border-b-gray-300">
+          <h3 className="text-xl font-bold ">보인정보기술</h3>
+          <p className="mb-2 text-sm text-gray-400 ">2024.04 ~ 재직중</p>
+          <ul className="pl-4 text-sm list-decimal">
+            <li>개발 도구의 QA 및 테스트를 진행하여 고도화 작업 진행</li>
+            <li>AI Agent를 활용하여 사업 분야에서의 이슈 해결 프로그램 개발</li>
+            <li>프로그램 유지 보수 및 개발 기획</li>
+            <li>접근성 PDF 제작</li>
+          </ul>
+        </div>
         <div className="flex flex-col gap-4 py-4">
           <h3 className="text-xl font-bold ">
             멋쟁이사자처럼 프론트엔드 스쿨 1기 수료
